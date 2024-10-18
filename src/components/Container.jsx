@@ -10,7 +10,7 @@ export default function Container() {
   const [text, setText] = useState("");
 
   const stats = {
-    numberOfWords: text.split(" ").filter((word) => word !== "").length,
+    numberOfWords: text.split(" ").filter(word => word !== "").length,
     numberOfCharacters: text.length,
     instagramCharactersLeft: INSTAGRAM_MAX_CHARACTERS - text.length,
     facebookCharactersLeft: FACEBOOK_MAX_CHARACTERS - text.length,
